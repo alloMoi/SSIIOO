@@ -20,3 +20,26 @@ function nombreAleatoire() {
 function effacer() {
     document.getElementById("message").textContent = "";
 }
+function verif_age() {
+	let n1 = prompt("Donnez votre âge : ")
+ 
+	if (n1 < 18) {
+        document.write("Vous êtes mineur")
+  document.body.style.backgroundColor = "red"
+	}
+	else {
+        document.write("Vous êtes majeur")
+    	document.body.style.backgroundColor = "green"
+	}
+}
+function calculateurMoyenne() {
+    let n1 = Number(prompt("Donnez 3 notes pour calculer votre moyenne, 1er Nombre"));
+    let n2 = Number(prompt("2eme nombre"));
+    let n3 = Number(prompt("3eme nombre"));
+
+    let Somme = n1 + n2 + n3;
+    let resultat = Somme / 3;
+
+
+    document.getElementById("message").textContent = "Votre moyenne est : " + resultat + "Votre somme est : " + Somme;
+}
