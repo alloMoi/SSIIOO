@@ -1,0 +1,86 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Liens principaux */
+h2 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Boutons des PDF */
+body > h2 a {
+    display: block;
+    background-color: #2563eb;
+    padding: 18px 45px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    text-align: center;
+    min-width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body > h2 a:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-4px);
+}
+
+/* Pied de page */
+footer {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer h2 a {
+    display: block;
+    background-color: #475569;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+footer h2 a:hover {
+    background-color: #64748b;
+    transform: translateY(-3px);
+}
+
+/* Adaptation mobile */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    body > h2 a {
+        min-width: 250px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
